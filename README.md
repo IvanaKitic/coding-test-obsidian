@@ -10,20 +10,6 @@ It uses:
 
 ## Getting Started
 
-To preview the production build locally, you can use a simple static server:
-
-Option 1: Using serve (Recommended)
-If you don’t already have it, install the serve package globally:
-
-bash
-Copy
-Edit
-npm install -g serve
-Then run the server from your project folder:
-serve dist
-This will start a local server, usually at:
-http://localhost:3000
-Open that URL in your browser to view the production build.
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) (v14 or later)
@@ -37,6 +23,24 @@ Clone the repository and install dependencies:
 npm install
 
 npm run dev
+```
 
+Then open your browser at:
+http://localhost:1234/
+
+To generate a production build:
+
+```bash
 npm run build
+```
 
+To preview the production build locally:
+
+```bash
+npm install -g serve
+
+serve dist
+```
+
+This will start a local server, usually at:
+http://localhost:3000
